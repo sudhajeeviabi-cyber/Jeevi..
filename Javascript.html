@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Sumathi K</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .resume {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border: 2px solid #000;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #000;
+      padding-bottom: 10px;
+    }
+    .header .info {
+      font-size: 14px;
+    }
+    .header img {
+      width: 100px;
+      height: 120px;
+      border: 1px solid #000;
+      object-fit: cover;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    .left, .right {
+      border: 1px solid #000;
+      padding: 10px;
+      font-size: 14px;
+    }
+    h3 {
+      margin: 10px 0 5px;
+      border-bottom: 1px solid #000;
+      font-size: 15px;
+    }
+    ul {
+      margin: 5px 0 10px 20px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    .section {
+      margin-bottom: 15px;
+    }
+    .download {
+      text-align: center;
+      margin-top: 20px;
+    }
+    button {
+      background: #0077cc;
+      color: #fff;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume" id="resume">
+    <div class="header">
+      <div class="info">
+        <b>Sumathi .K</b><br>
+        E-mail: sabarmathi0413@gmail.com<br>
+        Contact: 9940806130, 9123540620<br>
+        Address: 9/26 Anaimalai amman koil street,<br>
+        Edayapalayam, Vellalore,<br>
+        Coimbatore-641111
+      </div>
+      <img src="https://via.placeholder.com/100x120" alt="Profile Photo">
+    </div>
+
+    <div class="content">
+      <!-- Left Column -->
+      <div class="left">
+        <h3>Personal Data</h3>
+        <p><b>Name:</b> Sumathi. K</p>
+        <p><b>Father's Name:</b> Kumaravel. A</p>
+        <p><b>Mother's Name:</b> Kannammal. K</p>
+        <p><b>Date of Birth:</b> 13-11-1997</p>
+        <p><b>Gender:</b> Female</p>
+        <p><b>Marital Status:</b> Unmarried</p>
+        <p><b>Nationality:</b> Indian</p>
+
+        <h3>Linguistic Skills</h3>
+        <ul>
+          <li>English</li>
+          <li>Tamil</li>
+        </ul>
+
+        <h3>Area of Interest</h3>
+        <ul>
+          <li>Anchoring</li>
+          <li>Broadcast Journalism</li>
+        </ul>
+
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Photography</li>
+          <li>Modelling</li>
+          <li>Hearing songs</li>
+        </ul>
+      </div>
+
+      <!-- Right Column -->
+      <div class="right">
+        <div class="section">
+          <h3>Objective</h3>
+          <p>To work in a professionally managed organization, which provides access to enhance my existing knowledge and grow with the company.</p>
+        </div>
+
+        <div class="section">
+          <h3>Educational Qualifications</h3>
+          <ul>
+            <li>MSc Visual Communication (2018-2020) – Hindusthan College, Coimbatore. Marks: 78%</li>
+            <li>BSc Information Technology (2015-2018) – Hindusthan College, Coimbatore. Marks: 70%</li>
+            <li>HSC (2014-2015) – PSGR Krishnammal School, Coimbatore. Marks: 70%</li>
+            <li>SSLC (2012-2013) – ELGI Matric School, Coimbatore. Marks: 86%</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Technical Skills</h3>
+          <ul>
+            <li>After Effects CS4 (Basic)</li>
+            <li>Adobe Photoshop</li>
+            <li>MS Office</li>
+            <li>Operating Systems: Windows XP, 7, 8</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Personal Skills</h3>
+          <ul>
+            <li>Self learner and hard worker</li>
+            <li>Creative and team oriented</li>
+            <li>Ability to learn from others</li>
+            <li>Enthusiastic and motivated</li>
+            <li>Leadership qualities</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Seminar Participations</h3>
+          <ul>
+            <li>Seminar on "Mobile Computing & E-Governance" – Hindusthan College</li>
+            <li>Seminar on "Technological Innovations & Ethical Hacking" – Hindusthan College</li>
+            <li>Seminar on "Universal Health Coverage" – PSG College</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Academic Activities</h3>
+          <p>Completed thesis on "Women's Contemporary Status in Journalism – An Analytical Perspective".</p>
+        </div>
+
+        <div class="section">
+          <h3>Internships</h3>
+          <ul>
+            <li>Trainee at Puthiya Thalaimurai</li>
+            <li>Trainee at Puthuyugam</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="download">
+    <button onclick="downloadResume()">Download / Print Resume</button>
+  </div>
+
+  <script>
+    function downloadResume() {
+      window.print(); // lets user save as PDF or print
+    }
+  </script>
+</body>
+</html>
